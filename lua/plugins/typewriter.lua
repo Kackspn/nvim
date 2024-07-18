@@ -5,6 +5,5 @@ return {
     require('typewriter').setup()
   end,
   opts = {
-    enable = true,
   },
 }

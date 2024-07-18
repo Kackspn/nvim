@@ -9,10 +9,15 @@ keymap.set("n", "<leader>aa", ":bnext<CR>", opts)
 keymap.set("n", "<leader>as", ":bprev<CR>", opts)
 keymap.set("n", "<leader>b", ":bdelete<CR>", opts)
 
+--Ollama
+keymap.set("n", "<leader>o", ":!ollama run codellama:13b<CR>", opts)
+
 --Terminal
 vim.keymap.set("n", "<C-t>", "<cmd>Lspsaga term_toggle<CR>", opts)
 vim.keymap.set("t", "<C-c>", "<cmd>Lspsaga term_toggle<CR>", opts)
 
+--Typewriter
+vim.keymap.set("n", "<leader>tw", "<cmd>TWToggle<CR>", opts)
 
 -- Panel Nav
 keymap.set("n", "<leader>h", "<C-w>h", opts) -- Nav Left
