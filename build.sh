@@ -9,8 +9,12 @@ sudo mv nvim.appimage /opt/nvim/nvim
 
 sudo apt install zsh npm python3.10-venv luarocks clangd pip cargo ripgrep cmake -y
 
+cd nvim/
+mv .zshrc ~
 sudo chsh -s $(which zsh)
-source ~/.zshrc
+cd ~
+source .zshrc
+sudo mv nvim .config
 
 git clone https://github.com/zsh-users/zsh-autosuggestions.git
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
