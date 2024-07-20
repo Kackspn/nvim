@@ -1,5 +1,8 @@
 INSTALL
- 
+
+#ZINIT
+bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
+zinit self-update
 
 #NEOVIM
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
