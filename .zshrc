@@ -69,9 +69,9 @@ alias vi="nvim"
 alias q="exit"
 alias c="clear"
 alias lamdeep="ollama run deepseek-coder-v2"
-alias dedicated="cd ~ &&./ollamagpu.sh 0"
-alias integrated="cd ~ && ./ollamagpu.sh 1"
-alias ollamaboth="cd ~ && ./ollamagpu.sh 0,1"
+alias dedicated="cd ~/scripts/ &&./ollamagpu.sh 0"
+alias integrated="cd ~/scripts/ && ./ollamagpu.sh 1"
+alias ollamaboth="cd ~/scripts/ && ./ollamagpu.sh 0,1"
 
 # configure `time` format
 TIMEFMT=$'\nreal\t%E\nuser\t%U\nsys\t%S\ncpu\t%P'
