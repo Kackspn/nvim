@@ -64,6 +64,10 @@ setopt hist_verify            # show command with history expansion to user befo
 
 # force zsh to show the complete history
 alias history="history 0"
+alias sap="sudo apt upgrade"
+alias sad="sudo apt update"
+alias sa="sudo apt install"
+alias y="-y"
 alias vim="nvim"
 alias vi="nvim"
 alias q="exit"
