@@ -20,7 +20,7 @@ local opts = {
 		lazy = true,
 	},
 	install = {
-		colorscheme = { "flow" }
+		colorscheme = { "carbonfox" }
 	},
 	rtp = {
 		disabled_plugins = {
