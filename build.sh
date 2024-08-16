@@ -6,7 +6,7 @@ chmod u+x nvim.appimage
 sudo mkdir -p /opt/nvim
 sudo mv nvim.appimage /opt/nvim/nvim
 
-sudo apt install zsh npm python3.12-venv xclip luarocks clangd pip cargo ripgrep cmake -y
+sudo apt install zsh npm xclip luarocks clangd pip cargo ripgrep cmake -y
 
 mv .zshrc ~
 zsh
