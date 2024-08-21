@@ -64,19 +64,19 @@ setopt hist_verify            # show command with history expansion to user befo
 
 # force zsh to show the complete history
 alias history="history 0"
-alias sap="sudo apt upgrade"
-alias sad="sudo apt update"
-alias sa="sudo apt install"
+alias sap="sudo apt upgrade && sudo apt upgrade -y"
+alias sa="sudo apt install -y"
 alias sau="sudo updatedb"
-alias y="-y"
+alias sar="sudo apt remove"
+alias sarp="sudo apt purge"
+alias sss="sudo systemctl start"
+alias sst="sudo systemctl stop"
+alias sse="sudo systemctl enable"
+alias ssd="sudo systemctl disable"
 alias vim="nvim"
 alias vi="nvim"
 alias q="exit"
 alias c="clear"
-alias lamdeep="ollama run deepseek-coder-v2"
-alias dedicated="cd ~/scripts/ &&./ollamagpu.sh 0"
-alias integrated="cd ~/scripts/ && ./ollamagpu.sh 1"
-alias ollamaboth="cd ~/scripts/ && ./ollamagpu.sh 0,1"
 
 # configure `time` format
 TIMEFMT=$'\nreal\t%E\nuser\t%U\nsys\t%S\ncpu\t%P'
