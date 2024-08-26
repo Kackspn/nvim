@@ -64,7 +64,9 @@ setopt hist_verify            # show command with history expansion to user befo
 
 # force zsh to show the complete history
 alias history="history 0"
-alias sap="sudo apt upgrade && sudo apt upgrade -y"
+alias sdn="shutdown now"
+alias sap="sudo apt update && sudo apt upgrade -y"
+alias sup="sudo apt update"
 alias sa="sudo apt install -y"
 alias sau="sudo updatedb"
 alias sar="sudo apt remove"
