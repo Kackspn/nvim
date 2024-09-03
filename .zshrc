@@ -64,6 +64,7 @@ setopt hist_verify            # show command with history expansion to user befo
 
 # force zsh to show the complete history
 alias history="history 0"
+alias roblox="flatpak run org.vinegarhq.Sober"
 alias sdn="shutdown now"
 alias sap="sudo apt update && sudo apt upgrade -y"
 alias sup="sudo apt update"
