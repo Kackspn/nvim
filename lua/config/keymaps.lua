@@ -9,15 +9,27 @@ keymap.set("n", "<leader>aa", ":bnext<CR>", opts)
 keymap.set("n", "<leader>as", ":bprev<CR>", opts)
 keymap.set("n", "<leader>b", ":bdelete<CR>", opts)
 
---Ollama
-keymap.set("n", "<leader>o", ":!ollama run codellama:13b<CR>", opts)
+-- Neocodeium
+vim.keymap.set("i", "<C-Space>", function() 
+  require("neocodeium").accept()
+end)
+vim.keymap.set("i", "<C-w>", function() 
+  require("neocodeium").accept_word()
+end)
+vim.keymap.set("i", "<C-l>", function() 
+  require("neocodeium").accept_line()
+end)
+vim.keymap.set("i", "<C-e>", function()
+    require("neocodeium").cycle_or_complete()
+end)
+vim.keymap.set("i", "<C-q>", function()
+    require("neocodeium").cycle_or_complete(-1)
+end)
+vim.keymap.set("i", "<C-x>", "<Escape>:NeoCodeium toggle<CR>i<Right>",opts)
 
 --Terminal
 vim.keymap.set("n", "<C-t>", "<cmd>Lspsaga term_toggle<CR>", opts)
 vim.keymap.set("t", "<C-c>", "<cmd>Lspsaga term_toggle<CR>", opts)
-
---Typewriter
-vim.keymap.set("n", "<leader>tw", "<cmd>TWToggle<CR>", opts)
 
 -- Panel Nav
 keymap.set("n", "<leader>h", "<C-w>h", opts) -- Nav Left
@@ -31,7 +43,6 @@ vim.keymap.set("n", "<leader>nd", "<cmd>Lspsaga diagnostic_jump_next<CR>", opts)
 vim.keymap.set("n", "<leader>pd", "<cmd>Lspsaga diagnostic_jump_prev<CR>", opts)
 vim.keymap.set("n", "<leader>ca", "<cmd>Lspsaga code_action<CR>", opts)
 vim.keymap.set("n", "<leader>pp", "<cmd>Lspsaga peek_definition<CR>", opts)
-
 
 --Quick Save/Exit
 keymap.set("n", "C", ":w<CR>", opts)
