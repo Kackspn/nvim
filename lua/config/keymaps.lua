@@ -10,7 +10,7 @@ keymap.set("n", "<leader>as", ":bprev<CR>", opts)
 keymap.set("n", "<leader>b", ":bdelete<CR>", opts)
 
 -- Neocodeium
-vim.keymap.set("i", "<C-Space>", function() 
+vim.keymap.set("i", "<C-f>", function() 
   require("neocodeium").accept()
 end)
 vim.keymap.set("i", "<C-w>", function() 
