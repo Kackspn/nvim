@@ -13,7 +13,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 sudo mv zsh-syntax-highlighting /usr/share/zsh
 sudo mv zsh-autosuggestions /usr/share/zsh
 cp .zshrc ~
-cd ~ && ln .zshrc .config/nvim/.zshrc
+ln ~/.zshrc ~/.config/nvim/.zshrc
 
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/Hack.zip
 unzip Hack.zip
@@ -23,6 +23,5 @@ sudo fc-cache -f -v
 
 chsh -s $(which zsh)
 cd ~
-source .zshrc
 sudo mv nvim .config
 
