@@ -1,10 +1,12 @@
 return {
   "monkoose/neocodeium",
-  event = "VeryLazy",
+  lazy = false,
   config = function()
     local neocodeium = require("neocodeium")
     local lualine = require("lualine")
-    neocodeium.setup()
+    neocodeium.setup({
+      silent = true,
+    })
     lualine.setup({
         sections = {
           lualine_c = vim.list_extend(lualine.get_config().sections.lualine_c, {
