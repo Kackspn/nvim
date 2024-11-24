@@ -25,6 +25,7 @@ opt.completeopt = "menuone,noinsert,noselect"
 opt.fillchars = {eob = " "}
 
 -- Behaviour
+vim.diagnostic.config({ virtual_text = false })
 opt.hidden = true
 opt.errorbells = false
 opt.swapfile = false

@@ -1,10 +1,8 @@
 local config = function ()
-  local theme = require("lualine.themes.nightfox")
-  theme.normal.c.bg = nil
 
   require("lualine").setup({
     options = {
-      theme = theme,
+      theme = 'auto',
       globalstatus = true,
       section_separators = { left = '', right = '' },
       component_separators = { left = '', right = '' },
