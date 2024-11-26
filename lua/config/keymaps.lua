@@ -29,8 +29,7 @@ vim.keymap.set("n", "<C-x>", "<cmd>NeoCodeium toggle<CR>", opts)
 vim.keymap.set("i", "<C-x>", "<Escape>:NeoCodeium toggle<CR>i<Right>",opts)
 
 --Terminal
-vim.keymap.set("n", "<C-t>", "<cmd>Lspsaga term_toggle<CR>", opts)
-vim.keymap.set("t", "<C-c>", "<cmd>Lspsaga term_toggle<CR>", opts)
+vim.keymap.set("n", "<C-t>", "<cmd>terminal<CR>", opts)
 
 -- Panel Nav
 keymap.set("n", "<leader>h", "<C-w>h", opts) -- Nav Left
