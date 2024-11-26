@@ -29,6 +29,9 @@ M.config = function()
 		mapping = cmp.mapping.preset.insert({
 			["<Left>"] = cmp.mapping.abort(),
 			["<Tab>"] = cmp.mapping.confirm({ select = true}), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+      ["<C-j>"] = cmp.mapping.select_next_item(),
+      ["<C-k>"] = cmp.mapping.select_prev_item(),
+     	["<Enter>"] = cmp.mapping.confirm({ select = false}), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
 		}),
 		sources = cmp.config.sources({
 			{ name = "nvim_lsp" },

@@ -37,10 +37,13 @@ echo 'kitty.desktop' > ~/.config/xdg-terminals.list
 rm ~/.config/kitty/kitty.config
 cp ~/nvim/colors.conf ~/.config/kitty 
 cp ~/nvim/kitty.conf ~/.config/kitty
+cp ~/nvim/.p10k.zsh ~/.p10k.zsh
 
 sudo fc-cache -f -v
 
 chsh -s $(which zsh)
 cd ~
+source ~/.zshrc
+source ~/.p10k.zsh
 sudo mv nvim .config
 
