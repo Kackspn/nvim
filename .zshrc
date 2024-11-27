@@ -63,6 +63,7 @@ setopt hist_verify            # show command with history expansion to user befo
 #setopt share_history         # share command history data
 
 # force zsh to show the complete history
+alias coder="ollama run deepseek-coder-v2"
 alias history="history 0"
 alias roblox="flatpak run org.vinegarhq.Sober"
 alias sdn="shutdown now"
@@ -79,6 +80,7 @@ alias ssd="sudo systemctl disable"
 alias ssst="sudo systemctl status"
 alias vim="nvim"
 alias vi="nvim"
+alias v="nvim"
 alias q="exit"
 alias c="clear"
 
