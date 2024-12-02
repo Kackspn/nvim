@@ -30,6 +30,11 @@ vim.keymap.set("i", "<C-x>", "<Escape>:NeoCodeium toggle<CR>i<Right>",opts)
 
 --Terminal
 vim.keymap.set("n", "<C-t>", "<cmd>terminal<CR>", opts)
+vim.keymap.set("t", "<C-t>", "<C-\\><C-n>:q<CR>", opts)
+vim.keymap.set("t", "<C-h>", "<C-\\><C-n><C-w>h", opts)
+vim.keymap.set("t", "<C-j>", "<C-\\><C-n><C-w>j", opts)
+vim.keymap.set("t", "<C-k>", "<C-\\><C-n><C-w>k", opts)
+vim.keymap.set("t", "<C-l>", "<C-\\><C-n><C-w>l", opts)
 
 -- Panel Nav
 keymap.set("n", "<leader>h", "<C-w>h", opts) -- Nav Left
