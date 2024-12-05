@@ -36,6 +36,20 @@ vim.keymap.set("t", "<C-j>", "<C-\\><C-n><C-w>j", opts)
 vim.keymap.set("t", "<C-k>", "<C-\\><C-n><C-w>k", opts)
 vim.keymap.set("t", "<C-l>", "<C-\\><C-n><C-w>l", opts)
 
+-- Resize
+vim.keymap.set("n", "<A-k>", "<cmd>resize -2<CR>", opts)
+vim.keymap.set("n", "<A-j>", "<cmd>resize +2<CR>", opts)
+vim.keymap.set("n", "<A-l>", "<cmd>vertical resize -2<CR>", opts)
+vim.keymap.set("n", "<A-h>", "<cmd>vertical resize +2<CR>", opts)
+vim.keymap.set("t", "<A-k>", "<cmd>resize -2<CR>", opts)
+vim.keymap.set("t", "<A-j>", "<cmd>resize +2<CR>", opts)
+vim.keymap.set("t", "<A-l>", "<cmd>vertical resize -2<CR>", opts)
+vim.keymap.set("t", "<A-h>", "<cmd>vertical resize +2<CR>", opts)
+vim.keymap.set("i", "<A-k>", "<cmd>resize -2<CR>", opts)
+vim.keymap.set("i", "<A-j>", "<cmd>resize +2<CR>", opts)
+vim.keymap.set("i", "<A-l>", "<cmd>vertical resize -2<CR>", opts)
+vim.keymap.set("i", "<A-h>", "<cmd>vertical resize +2<CR>", opts)
+
 -- Panel Nav
 keymap.set("n", "<leader>h", "<C-w>h", opts) -- Nav Left
 keymap.set("n", "<leader>j", "<C-w>j", opts) -- Nav Down
