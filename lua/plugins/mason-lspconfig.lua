@@ -3,7 +3,6 @@ local opts = {
     "clangd",
     "pyright",
     "lua_ls",
-    "asm_lsp",
   },
 }
 
