@@ -3,6 +3,7 @@ local opts = {
     "clangd",
     "pyright",
     "lua_ls",
+    "rust_analyzer",
   },
 }
 
