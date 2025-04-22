@@ -1,1 +1,1 @@
-.zshrc
+/home/jackson/.zshrc

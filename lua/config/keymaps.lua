@@ -9,11 +9,17 @@ keymap.set("n", "<leader>aa", ":bnext<CR>", opts)
 keymap.set("n", "<leader>as", ":bprev<CR>", opts)
 keymap.set("n", "<leader>b", ":bdelete<CR>", opts)
 
+-- Precognition
+keymap.set("n", "<leader>pt", ":Precognition toggle<CR>", opts)
+
+-- RustFMT
+keymap.set("n", "<leader>r", ":RustFmt<CR>", opts)
+
 -- Neocodeium
 vim.keymap.set("i", "<C-f>", function()
   require("neocodeium").accept()
 end)
-vim.keymap.set("i", "<C-w>", function()
+vim.keymap.set("i", "<C-t>", function()
   require("neocodeium").accept_word()
 end)
 vim.keymap.set("i", "<C-l>", function()
